@@ -60,9 +60,10 @@
 
                 <!-- Button trigger modal -->
                 <div id="modal" class="container">
-                    <div class="row g-3">
+                    <div class="row g-3 justify-content-center">
                         <div class="col-3">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe to my newsletter!
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Subscribe to my newsletter!
                             </button>
                         </div>
                     </div>
@@ -221,36 +222,40 @@
 </footer>
 
 <!-- Modal -->
-<section id="modal" class="container">
-    <div class="row">
-        <div class="col mb-4">
+<div class="container">
+    <div class="row g3">
+        <div class="col">
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
-                        <div for="subscribe" class="modal-header">
-                            <h1 class="modal-title fs-5" id="subscribe">Subscribe</h1>
-                            <p class="p-2">Join my newsletter for the latest updates on my projects, coding tips, and industry insights delivered straight to your inbox.</p>
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Subscribe</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <Form id="modal-form" class="container">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="inputname" class="form-label">Name</label>
-                                    <input type="text" id="inputname" class="form-control" aria-label="First name">
+                        <div class="modal-body">
+                            <p>Join my newsletter for the latest updates on my projects, coding tips, and industry insights delivered straight to your inbox.</p>
+                            <form class="row g-3">
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <label for="FormControlInput1" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="FormControlInput1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="FormControlInput2" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="FormControlInput2">
+                                    </div>
+                                    <div>
+                                        <div class="col-12 mb-4">
+                                            <button type="submit" class="btn btn-primary">Sign up</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <label for="inputemail4" class="formlabel">Email</label>
-                                <div class="col-md-6">
-                                    <input type="email" id="inputemail4" class="form-control" aria-label="Email">
-                                </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Sign up!</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-</section>
 
 </html>

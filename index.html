@@ -60,10 +60,11 @@
                 
                 <!-- Button trigger modal -->
                 <div id="modal" class="container">
-                    <div class="row g-3">
+                    <div class="row g-3 justify-content-center">
                         <div class="col-3">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe to my newsletter!
-                        </button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Subscribe to my newsletter!
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -216,10 +217,37 @@
                     </div>
                 </form>
             </div>
+        </section>
     </div>
-    </section>
 </footer>
 
 <!-- Modal -->
-   
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Subscribe</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Subscribe"></button>
+                </div>
+                <div class="modal-body">
+                <p>Join my newsletter for the latest updates on my projects, coding tips, and industry insights delivered straight to your  inbox.</p>
+                    <form class="row g-3">
+                        <div class="col-lg-6">
+                            <label for="FormControlInput1" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="FormControlInput1">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="FormControlInput2" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="FormControlInput2">
+                        </div>
+                        <div>
+                            <div class="col-12 mb-4">
+                            <button type="submit" class="btn btn-primary">Sign up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>               
+    </div>
 </html>
